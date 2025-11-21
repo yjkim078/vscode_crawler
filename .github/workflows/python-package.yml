@@ -35,7 +35,7 @@ jobs:
     - name: Commit and push changes
       run: |
         git config --global user.name 'yjkim078'
-        git config --global user.email 'lime3737@google.com'
+        git config --global user.email 'yjkim078@github.com'
         git add .
         git commit -m "Update news: $(date -u '+%Y-%m-%d %H:%M')"
         git push origin HEAD:${{ github.ref_name }}
